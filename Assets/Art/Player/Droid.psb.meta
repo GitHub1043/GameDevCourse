@@ -117,7 +117,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Body
+  - name: Body D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -643,7 +643,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -860, y: 44}
-  - name: R Mouth
+  - name: R Mouth D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -822,7 +822,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -427, y: -595}
-  - name: L Mouth
+  - name: L Mouth D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -1001,7 +1001,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -222, y: -572}
-  - name: Mouth
+  - name: Mouth D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -4636,7 +4636,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -180, y: -606}
-  - name: L Eye
+  - name: L Eye D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -5168,7 +5168,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -11, y: -891}
-  - name: R Eye
+  - name: R Eye D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -5700,7 +5700,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -121, y: -796}
-  - name: Head
+  - name: Head D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -6145,7 +6145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -704, y: -739}
-  - name: L Leg
+  - name: L Leg D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -6507,7 +6507,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -423, y: 85}
-  - name: R Leg
+  - name: R Leg D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -6959,7 +6959,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -228, y: 85}
-  - name: Layer 2
+  - name: R Arm D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -7424,7 +7424,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -113, y: -420}
-  - name: Layer 1
+  - name: L Arm D
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -7874,78 +7874,78 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 2
-    spriteName: Layer 2
+  - name: R Arm D
+    spriteName: R Arm D
     isGroup: 0
     parentIndex: -1
     spriteID: 548934314f9d9854e86da4b202b07d4f
     layerID: 57
     mosaicPosition: {x: 553, y: 4}
-  - name: Layer 1
-    spriteName: Layer 1
+  - name: L Arm D
+    spriteName: L Arm D
     isGroup: 0
     parentIndex: -1
     spriteID: 3d872714df8eb2e408a289cda4505547
     layerID: 56
     mosaicPosition: {x: 761, y: 4}
-  - name: Body
-    spriteName: Body
+  - name: Body D
+    spriteName: Body D
     isGroup: 0
     parentIndex: -1
     spriteID: 3baebd4b8c6a2f546a6f51e87fca8f19
     layerID: 41
     mosaicPosition: {x: 4, y: 317}
-  - name: R Mouth
-    spriteName: R Mouth
+  - name: R Mouth D
+    spriteName: R Mouth D
     isGroup: 0
     parentIndex: -1
     spriteID: 8f06e140ca0fc3d42aafb9b54bf8ecb0
     layerID: 22
     mosaicPosition: {x: 719, y: 212}
-  - name: L Mouth
-    spriteName: L Mouth
+  - name: L Mouth D
+    spriteName: L Mouth D
     isGroup: 0
     parentIndex: -1
     spriteID: d5303cc5177b9fa4c9c0286359fd6365
     layerID: 21
     mosaicPosition: {x: 719, y: 235}
-  - name: Mouth
-    spriteName: Mouth
+  - name: Mouth D
+    spriteName: Mouth D
     isGroup: 0
     parentIndex: -1
     spriteID: cd60c2fa78b5e2148aabda1a13429515
     layerID: 20
     mosaicPosition: {x: 761, y: 208}
-  - name: L Eye
-    spriteName: L Eye
+  - name: L Eye D
+    spriteName: L Eye D
     isGroup: 0
     parentIndex: -1
     spriteID: 8bcbcb15821de984e9f4f4f49b913920
     layerID: 17
     mosaicPosition: {x: 965, y: 4}
-  - name: R Eye
-    spriteName: R Eye
+  - name: R Eye D
+    spriteName: R Eye D
     isGroup: 0
     parentIndex: -1
     spriteID: bf584060163e8f641aa3aa4f0e7d1362
     layerID: 19
     mosaicPosition: {x: 965, y: 99}
-  - name: L Leg
-    spriteName: L Leg
+  - name: L Leg D
+    spriteName: L Leg D
     isGroup: 0
     parentIndex: -1
     spriteID: 0b8090bb5dafc27419ac69b327ec9fa0
     layerID: 52
     mosaicPosition: {x: 553, y: 212}
-  - name: R Leg
-    spriteName: R Leg
+  - name: R Leg D
+    spriteName: R Leg D
     isGroup: 0
     parentIndex: -1
     spriteID: 26fa46a708316d54093b74bb203345ee
     layerID: 50
     mosaicPosition: {x: 636, y: 212}
-  - name: Head
-    spriteName: Head
+  - name: Head D
+    spriteName: Head D
     isGroup: 0
     parentIndex: -1
     spriteID: 5d6bfd807b0dfdc4484b4fcc12b6330d
