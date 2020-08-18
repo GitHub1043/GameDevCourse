@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class PlatfromController : MonoBehaviour
 {
@@ -11,6 +10,12 @@ public class PlatfromController : MonoBehaviour
     public int moveVel = 5;
 
     Transform startPosition;
+
+    public Transform[] coinSpawnPositions;
+
+    public GameObject coinPrefab;
+
+    public GameObject spawnedCoin;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +31,25 @@ public class PlatfromController : MonoBehaviour
         }
         else
         {
+            if(spawnedCoin != null)
+            {
+                Destroy(spawnedCoin);
+            }
             startPosition = spawnPositions[Random.Range(0, spawnPositions.Length)];
             transform.position = startPosition.position;
+
+            int coin = Random.Range(0, 3);
+
+            switch(coin)
+            {
+                case 0:
+                case 1:
+                   spawnedCoin =  Instantiate(coinPrefab, coinSpawnPositions[coin].position, Quaternion.identity,transform);
+                    break;
+                case 2:
+                default:
+                    break;
+            }
         }
     }
 }
