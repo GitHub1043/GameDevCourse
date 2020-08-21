@@ -24,13 +24,15 @@ public class PlayerController : MonoBehaviour
 
     public bool shieldOn = false;
 
-    float shieldCD = 2f;
-
+    public float shieldCDTime = 2f;
+    float shieldCD = 0;
+    bool shieldOnCD = false;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        
         shield.gameObject.SetActive(false);
     }
     //Update method used for physics in our game, because it happens every fixed amoun of time
@@ -46,22 +48,51 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Jump");
             rb.AddForce(Vector2.up * jumpForce);
         }
-
         anim.SetFloat("yVelocity", rb.velocity.y);
         anim.SetBool("Grounded", grounded);
-
         if (Input.GetKeyDown(KeyCode.S))
         {
-            shield.gameObject.SetActive(true);
-            shieldOn = true;
+            TurnOnShield();
         }
-        if (Input.GetKeyUp(KeyCode.S))
+        //if(Input.GetKeyUp(KeyCode.S))
+        //{
+        //    shield.gameObject.SetActive(false);
+        //    shieldOn = false;
+        //}
+        if (shieldOnCD)
         {
-            shield.gameObject.SetActive(false);
-            shieldOn = false;
+            shieldCD += Time.deltaTime;
+            if (shieldCD >= shieldCDTime * 2)
+            {
+                shieldCD = 0f;
+                shieldOnCD = false;
+            }
         }
     }
-
+    public void Jump()
+    {
+        if (grounded)
+        {
+            anim.SetTrigger("Jump");
+            rb.AddForce(Vector2.up * jumpForce);
+        }
+    }
+    public void TurnOnShield()
+    {
+        if (!shieldOnCD)
+        {
+            StartCoroutine(ShieldUpCo());
+        }
+    }
+    IEnumerator ShieldUpCo()
+    {
+        shieldOnCD = true;
+        shield.gameObject.SetActive(true);
+        shieldOn = true;
+        yield return new WaitForSeconds(shieldCDTime);
+        shield.gameObject.SetActive(false);
+        shieldOn = false;
+    }
     public void GameOver()
     {
         //Now just stop the camera controller and kill the player
